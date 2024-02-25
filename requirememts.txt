@@ -1,0 +1,7 @@
+pip install opencv-python-headless
+pip install numpy
+pip install tensorflow
+pip install streamlit
+pip install tensorflow-addons
+pip install firebase-admin
+pip install streamlit-webrtc
