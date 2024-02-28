@@ -11,13 +11,13 @@ from streamlit_webrtc import webrtc_streamer, VideoTransformerBase
 import time
 import firebase_admin
 from firebase_admin import credentials, auth
-# 
-# CLIENT_ID = '1973ff0394be4f7d8e695b37b4ebfa56'
-# CLIENT_SECRET = '7a5887b8d98e4877a5fec231e436b457'
 
-# if not firebase_admin._apps:
-#     cred = credentials.Certificate(r"C:\Users\poojitha\Downloads\music-player-4dadd-firebase-adminsdk-x2i3x-93d0383e17.json")
-#     firebase_admin.initialize_app(cred)
+CLIENT_ID = '1973ff0394be4f7d8e695b37b4ebfa56'
+CLIENT_SECRET = '7a5887b8d98e4877a5fec231e436b457'
+
+if not firebase_admin._apps:
+    cred = credentials.Certificate(r"C:\Users\poojitha\Downloads\music-player-4dadd-firebase-adminsdk-x2i3x-93d0383e17.json")
+    firebase_admin.initialize_app(cred)
 
 emotion_mapping = {
     "happy": [["Gaaju Bomma", "Hesham Abdul Wahab"], ["Na Roja Nuvve", "Hesham Abdul Wahab"]],
